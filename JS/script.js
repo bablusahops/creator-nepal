@@ -41,7 +41,7 @@ if (user) {
 } else {
 
     sidebarName.textContent = "Login";
-    sidebarPhoto.src = "../IMAGES/default-profile.png";
+    sidebarPhoto.src = "../images/default-profile.png";
 
 }
 const logoutBtn = document.getElementById("logoutBtn");

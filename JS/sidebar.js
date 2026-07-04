@@ -43,7 +43,7 @@ if (sidebarPhoto && sidebarName) {
 
     } else {
 
-        sidebarPhoto.src = "IMAGES/default-profile.png";
+        sidebarPhoto.src = "images/default-profile.png";
         sidebarName.textContent = "Login";
         sidebarName.href = "pages/login.html";
 
