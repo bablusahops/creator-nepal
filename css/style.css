@@ -1,0 +1,1430 @@
+/* Remove default spacing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Website background */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+    color: #1e293b;
+}
+/* Navigation Bar */
+nav{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+nav h2{
+    color:#2563EB;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav ul li{
+    cursor:pointer;
+    font-weight:bold;
+}
+
+nav ul li:hover{
+    color:#2563EB;
+}
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:60px 80px;
+    min-height:85vh;
+    background:#f8fafc;
+}
+
+.hero-text{
+    width:50%;
+}
+
+.hero-text h1{
+    font-size:55px;
+    color:#1e293b;
+    margin-bottom:20px;
+}
+
+.hero-text p{
+    font-size:20px;
+    color:#64748b;
+    margin-bottom:30px;
+    line-height:1.8;
+}
+
+.hero-image{
+    width:50%;
+    text-align:right;
+}
+
+.hero-image img{
+    width:100%;
+    max-width:600px;
+}
+.hero h1{
+    font-size:60px;
+    color:#1e293b;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:22px;
+    color:#475569;
+    margin-bottom:35px;
+}
+
+.hero h1{
+    font-size:55px;
+    color:#1e293b;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:20px;
+    color:#64748b;
+    margin-bottom:30px;
+}
+
+.btn1,
+.btn2{
+
+    padding:15px 35px;
+    border:none;
+    border-radius:10px;
+    font-size:18px;
+    cursor:pointer;
+    margin:10px;
+
+}
+
+.btn1{
+
+    background:#2563EB;
+    color:white;
+
+}
+
+.btn2{
+
+    background:#F97316;
+    color:white;
+
+}
+.btn1,
+.btn2{
+    display:inline-block;
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:10px;
+    font-size:18px;
+    margin:10px;
+    color:white;
+    transition:.3s;
+}
+
+.btn1{
+    background:#2563EB;
+}
+
+.btn2{
+    background:#F97316;
+}
+
+.btn1:hover{
+    background:#1d4ed8;
+    transform:translateY(-3px);
+}
+
+.btn2:hover{
+    background:#ea580c;
+    transform:translateY(-3px);
+}
+.signup{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:60px;
+
+}
+
+.signup-box{
+
+    width:650px;
+    background:white;
+    padding:50px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+
+}
+
+.signup-box h1{
+
+    text-align:center;
+    margin-bottom:10px;
+
+}
+
+.signup-box p{
+
+    text-align:center;
+    color:gray;
+    margin-bottom:30px;
+
+}
+
+.signup-box label{
+
+    display:block;
+    margin-top:15px;
+    font-weight:bold;
+
+}
+
+.signup-box input,
+.signup-box select,
+.signup-box textarea{
+
+    width:100%;
+    padding:12px;
+    margin-top:5px;
+    border:1px solid #ddd;
+    border-radius:8px;
+    font-size:16px;
+
+}
+
+.signup-box textarea{
+
+    height:100px;
+    resize:none;
+
+}
+
+.signup-box button{
+
+    width:100%;
+    margin-top:25px;
+    padding:15px;
+    border:none;
+    border-radius:8px;
+    background:#2563EB;
+    color:white;
+    font-size:18px;
+    cursor:pointer;
+
+}
+
+.signup-box button:hover{
+
+    background:#1d4ed8;
+
+}
+/* ===========================
+   PROFILE PHOTO
+=========================== */
+
+.profile-upload{
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    margin:35px 0;
+
+}
+
+.profile-circle{
+
+    width:140px;
+    height:140px;
+
+    border:3px dashed #4f46e5;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    position:relative;
+
+    overflow:hidden;
+
+    background:#eef2ff;
+
+    cursor:pointer;
+
+    margin:auto;
+
+}
+
+.profile-circle:hover{
+    background:#eef2ff;
+}
+
+.profile-circle img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    display:none;
+
+}
+
+#plusIcon{
+
+    position:absolute;
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    font-size:60px;
+
+    font-weight:bold;
+
+    color:#4f46e5;
+
+    line-height:1;
+
+}
+
+.upload-btn{
+
+    margin-top:20px;
+
+    font-size:20px;
+
+    font-weight:600;
+
+    color:#1e293b;
+
+    cursor:pointer;
+
+}
+/* ===========================
+   ABOUT DROPDOWN
+=========================== */
+
+nav ul li{
+    position: relative;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #1e293b;
+    font-weight: bold;
+}
+
+/* Hide dropdown */
+
+.dropdown-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    margin-top: 0;
+    background: white;
+    min-width: 240px;
+    list-style: none;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,.12);
+    overflow: hidden;
+    z-index: 1000;
+}
+
+/* Dropdown items */
+
+.dropdown-menu li{
+    width: 100%;
+}
+
+.dropdown-menu li a{
+    display: block;
+    padding: 14px 18px;
+    color: #1e293b;
+    text-decoration: none;
+    font-weight: 500;
+    transition: .3s;
+}
+
+/* Hover */
+
+.dropdown-menu li a:hover{
+    background: #2563EB;
+    color: white;
+}
+
+/* Show dropdown */
+
+.dropdown:hover .dropdown-menu{
+    display: block;
+}
+nav a{
+    color:#2563EB !important;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#1d4ed8 !important;
+}
+/* ===========================
+   ABOUT PAGE
+=========================== */
+
+/* Hero Section */
+
+.about-hero{
+    background:#2563eb;
+    color:white;
+    text-align:center;
+    padding:70px 20px;
+}
+
+.about-hero h1{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+.about-hero p{
+    font-size:20px;
+}
+
+/* Main About Section */
+
+.about-page{
+    width:90%;
+    max-width:1200px;
+    margin:70px auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:60px;
+}
+
+.about-left{
+    flex:2;
+}
+
+.about-left h2{
+    font-size:36px;
+    color:#1e293b;
+    margin-bottom:20px;
+}
+
+.about-left p{
+    font-size:18px;
+    line-height:1.9;
+    text-align:justify;
+    color:#475569;
+}
+
+/* Right Card */
+
+.about-right{
+    flex:1;
+    background:white;
+    text-align:center;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+.about-right img{
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #2563eb;
+}
+
+.about-right h3{
+    margin-top:20px;
+    color:#2563eb;
+    font-size:22px;
+}
+
+.about-right h2{
+    margin-top:10px;
+    color:#1e293b;
+    font-size:30px;
+}
+
+/* Mission & Vision */
+
+.mission,
+.vision{
+    width:90%;
+    max-width:1100px;
+    margin:40px auto;
+    background:white;
+    padding:35px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.mission h2,
+.vision h2{
+    color:#2563eb;
+    margin-bottom:15px;
+    font-size:32px;
+}
+
+.mission p,
+.vision p{
+    font-size:18px;
+    line-height:1.8;
+    color:#475569;
+}
+/* ===========================
+   CORE VALUES
+=========================== */
+
+.values{
+    width:90%;
+    max-width:1200px;
+    margin:70px auto;
+    text-align:center;
+}
+
+.values h2{
+    font-size:38px;
+    color:#2563eb;
+    margin-bottom:40px;
+}
+
+.value-container{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.value-card{
+    background:white;
+    padding:30px;
+    border-radius:18px;
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+    transition:.3s;
+}
+
+.value-card:hover{
+    transform:translateY(-8px);
+}
+
+.value-card h3{
+    color:#2563eb;
+    margin-bottom:15px;
+    font-size:28px;
+}
+
+.value-card p{
+    color:#475569;
+    line-height:1.8;
+    font-size:17px;
+}
+/* ===================================
+   WHY CHOOSE CREATOR NEPAL
+=================================== */
+
+.why-hero{
+    text-align:center;
+    padding:80px 20px 50px;
+    background:#f8fafc;
+}
+
+.why-hero h1{
+    font-size:48px;
+    color:#1e293b;
+    margin-bottom:20px;
+}
+
+.why-hero p{
+    max-width:700px;
+    margin:auto;
+    font-size:18px;
+    color:#64748b;
+    line-height:1.8;
+}
+
+.features{
+    max-width:1200px;
+    margin:60px auto;
+    padding:20px;
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+}
+
+.feature-card{
+    background:#ffffff;
+    border-radius:15px;
+    padding:35px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.feature-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 12px 30px rgba(37,99,235,0.20);
+}
+
+.feature-card h2{
+    color:#2563EB;
+    margin-bottom:15px;
+    font-size:24px;
+}
+
+.feature-card p{
+    color:#64748b;
+    line-height:1.8;
+    font-size:16px;
+}
+/* Active Navigation */
+
+nav ul li a.active{
+    background: #eef2ff;
+    color: #4f5de4;
+    padding: 10px 22px;
+    border-radius: 999px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav ul li a{
+    padding:10px 22px;
+    border-radius:999px;
+    transition:0.3s;
+}
+
+nav ul li a:hover{
+    background:#eef2ff;
+    color:#4f5de4;
+}
+/* ===========================
+   Logo Area
+=========================== */
+
+.logo-area{
+    display:flex;
+    align-items:center;
+    gap:18px;
+}
+
+/* Hamburger */
+
+.menu-icon{
+    width:30px;
+    cursor:pointer;
+}
+
+.menu-icon span{
+    display:block;
+    height:3px;
+    background:#4a63e7;
+    margin:6px 0;
+    border-radius:20px;
+}
+
+/* Logo */
+
+.logo-text{
+
+    display:flex;
+
+    overflow:hidden;
+
+    font-size:28px;
+
+    font-weight:700;
+
+    color:#4a63e7;
+
+    white-space:nowrap;
+
+}
+
+/* Nepal First */
+
+.nepal{
+
+    transform:translateX(-160px);
+
+    opacity:0;
+
+    animation:showNepal .6s ease forwards;
+
+    animation-delay:.2s;
+
+}
+
+/* Creator Comes Behind Nepal */
+
+.creator{
+    margin-right:8px;
+
+    transform:translateX(-280px);
+
+    opacity:0;
+
+    animation:showCreator .8s ease forwards;
+
+    animation-delay:.55s;
+
+}
+
+/* Nepal Animation */
+
+@keyframes showNepal{
+
+    from{
+
+        transform:translateX(-160px);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:translateX(0);
+
+        opacity:1;
+
+    }
+
+}
+
+/* Creator Animation */
+
+@keyframes showCreator{
+
+    from{
+
+        transform:translateX(-280px);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:translateX(0);
+
+        opacity:1;
+
+    }
+
+}
+/* ==========================================
+   Creator Command Center
+========================================== */
+
+.overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.35);
+    backdrop-filter:blur(4px);
+    opacity:0;
+    visibility:hidden;
+    transition:.3s;
+    z-index:999;
+}
+
+.overlay.show{
+    opacity:1;
+    visibility:visible;
+}
+
+.command-center{
+
+    position:fixed;
+
+    top:0;
+
+    left:-340px;
+
+    width:320px;
+
+    height:100vh;
+
+    background:#ffffff;
+
+    border-radius:0 24px 24px 0;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+    transition:.35s ease;
+
+    z-index:1000;
+
+    display:flex;
+
+    flex-direction:column;
+
+}
+
+.command-center.show{
+
+    left:0;
+
+}
+
+/* Profile */
+
+.command-profile{
+
+    text-align:center;
+
+    padding:35px 20px;
+
+    border-bottom:1px solid #eee;
+
+}
+
+.command-profile img{
+
+    width:90px;
+
+    height:90px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    margin-bottom:15px;
+
+}
+
+.command-profile h3{
+
+    margin-bottom:5px;
+
+}
+
+.command-profile p{
+
+    color:#777;
+
+    font-size:14px;
+
+}
+
+/* Menu */
+
+.command-menu{
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:20px;
+
+    gap:12px;
+
+}
+
+.command-menu a{
+
+    text-decoration:none;
+
+    color:#222;
+
+    padding:14px 18px;
+
+    border-radius:12px;
+
+    transition:.25s;
+
+    font-weight:500;
+
+}
+
+.command-menu a:hover{
+
+    background:#eef3ff;
+
+    color:#4a63e7;
+
+}
+
+/* Logout */
+
+.logout-btn{
+
+    margin-top:auto;
+
+    padding:20px;
+
+}
+
+.logout-btn a{
+
+    display:block;
+
+    text-decoration:none;
+
+    color:#e53935;
+
+    padding:14px 18px;
+
+    border-radius:12px;
+
+    transition:.25s;
+
+}
+
+.logout-btn a:hover{
+
+    background:#ffecec;
+
+}
+/* Command Center Icons */
+
+.command-menu a,
+.logout-btn a{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.command-menu a i,
+.logout-btn a i{
+
+    width:22px;
+
+    text-align:center;
+
+    font-size:18px;
+
+    color:#4a63e7;
+
+}
+
+.command-menu a span,
+.logout-btn a span{
+
+    font-size:16px;
+
+    font-weight:500;
+
+}
+/* ==========================================
+   Creator Nepal
+   Profile Photo Crop Modal
+========================================== */
+
+/* Crop Popup Background */
+.crop-modal{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.75);
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:9999;
+
+}
+
+/* जब Popup खुले */
+.crop-modal.show{
+
+    display:flex;
+
+}
+
+/* White Box */
+.crop-box{
+
+    width:500px;
+
+    max-width:90%;
+
+    background:#fff;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    text-align:center;
+
+}
+
+/* Title */
+.crop-box h2{
+
+    margin-bottom:20px;
+
+}
+
+/* Crop Image */
+.crop-box img{
+
+    width:100%;
+
+    max-height:400px;
+
+}
+
+/* Buttons */
+.crop-buttons{
+
+    margin-top:20px;
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+}
+
+/* Buttons Style */
+.crop-buttons button{
+
+    padding:12px 25px;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+}
+
+/* Cancel Button */
+#cropCancel{
+
+    background:#ddd;
+
+}
+
+/* Save Button */
+#cropSave{
+
+    background:#4a63e7;
+
+    color:white;
+
+}
+/* ==========================================
+   Creator Dashboard
+========================================== */
+
+.creator-dashboard{
+
+    width:100%;
+
+    min-height:100vh;
+
+    background:#f4f7fc;
+
+    padding-bottom:50px;
+
+}
+
+/* Cover Banner */
+
+.dashboard-cover{
+
+    width:100%;
+
+    height:260px;
+
+    background:linear-gradient(135deg,#0b5ed7,#4ea5ff);
+
+}
+
+/* Profile Card */
+
+.dashboard-profile{
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:-80px auto 30px;
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:30px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.12);
+
+}
+
+/* Profile Photo */
+
+.dashboard-profile img{
+
+    width:150px;
+
+    height:150px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:6px solid #fff;
+
+    margin-top:-90px;
+
+    background:#ddd;
+
+}
+
+/* Verified Badge */
+
+.verified-badge{
+
+    display:inline-block;
+
+    margin-top:10px;
+
+    color:#0b5ed7;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+}
+
+/* Name */
+
+.dashboard-profile h2{
+
+    margin-top:15px;
+
+    font-size:30px;
+
+}
+
+/* Username */
+
+.dashboard-profile p{
+
+    color:#666;
+
+    margin:8px 0;
+
+}
+
+/* Statistics */
+
+.dashboard-stats{
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+/* Stat Card */
+
+.stat-box{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:25px;
+
+    text-align:center;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.stat-box h3{
+
+    color:#0b5ed7;
+
+    font-size:28px;
+
+}
+
+/* Quick Actions */
+
+.dashboard-actions{
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:40px auto;
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+.dashboard-actions button{
+
+    padding:15px;
+
+    border:none;
+
+    border-radius:14px;
+
+    cursor:pointer;
+
+}
+/* About Card */
+
+.about-card{
+
+    width:90%;
+
+    max-width:900px;
+
+    margin:30px auto;
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+}
+
+.about-card h3{
+
+    color:#0b5ed7;
+
+    margin-bottom:15px;
+
+}
+
+.about-card p{
+
+    color:#555;
+
+    line-height:1.8;
+
+}
+/* ===========================
+   Command Center
+=========================== */
+
+#overlay{
+
+    position:fixed;
+    top:0;
+    left:0;
+
+    width:100%;
+    height:100%;
+
+    background:rgba(0,0,0,.5);
+
+    display:none;
+
+    z-index:999;
+
+}
+
+.command-center{
+
+    position:fixed;
+
+    top:0;
+    left:-300px;
+
+    width:280px;
+    height:100%;
+
+    background:#fff;
+
+    transition:.3s;
+
+    z-index:1000;
+
+    padding:30px;
+
+    box-shadow:5px 0 20px rgba(0,0,0,.2);
+
+}
+
+.command-center h2{
+
+    color:#4b5fe2;
+
+    margin-bottom:30px;
+
+}
+
+.command-center a{
+
+    display:block;
+
+    text-decoration:none;
+
+    color:#333;
+
+    padding:15px 0;
+
+    font-size:18px;
+
+}
+
+.command-center.show{
+
+    left:0;
+
+}
+
+#overlay.show{
+
+    display:block;
+
+}
+.toast{
+
+position:fixed;
+
+top:20px;
+
+right:20px;
+
+background:#4CAF50;
+
+color:white;
+
+padding:15px 25px;
+
+border-radius:10px;
+
+font-size:16px;
+
+font-weight:600;
+
+display:none;
+
+z-index:9999;
+
+box-shadow:0 10px 20px rgba(0,0,0,.2);
+
+}
+/* ===========================
+   Explore Section
+=========================== */
+
+.explore-section{
+    width:100%;
+    display:flex;
+    justify-content:flex-end;
+    padding:12px 70px;
+    box-sizing:border-box;
+}
+
+.explore-btn{
+    width:100px;
+    height:40px;
+
+    background:#000;
+    color:#fff;
+
+    text-decoration:none;
+    font-size:16px;
+    font-weight:600;
+
+    border-radius:999px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    transition:0.3s;
+}
+
+.explore-btn:hover{
+    background:#222;
+    transform:translateY(-2px);
+}
+/* ===========================
+   Explore Page
+=========================== */
+
+.coming-soon-page{
+
+    width:100%;
+    height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:#ffffff;
+
+}
+
+.coming-soon-page h1{
+
+    color:#2f5cff;
+
+    font-size:60px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}

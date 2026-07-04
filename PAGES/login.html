@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Creator Login</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+
+    background:#f5f7ff;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    height:100vh;
+
+}
+
+.login-box{
+
+    width:420px;
+
+    background:#fff;
+
+    padding:40px;
+
+    border-radius:20px;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.15);
+
+}
+
+.login-box h1{
+
+    text-align:center;
+
+    color:#4d5fe8;
+
+    margin-bottom:30px;
+
+}
+
+.login-box label{
+
+    display:block;
+
+    margin-top:18px;
+
+    margin-bottom:8px;
+
+    font-weight:bold;
+
+}
+
+.login-box input{
+
+    width:100%;
+
+    padding:14px;
+
+    border:1px solid #ccc;
+
+    border-radius:10px;
+
+    font-size:16px;
+
+}
+
+.login-box button{
+
+    width:100%;
+
+    margin-top:25px;
+
+    padding:14px;
+
+    border:none;
+
+    background:#4d5fe8;
+
+    color:white;
+
+    font-size:18px;
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+}
+
+.login-box button:hover{
+
+    background:#3347dd;
+
+}
+
+#error{
+
+    color:red;
+
+    margin-top:15px;
+
+    text-align:center;
+
+}
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="login-box">
+
+<h1>Creator Login</h1>
+
+<form id="loginForm">
+
+<label>Username</label>
+
+<input
+type="text"
+id="username"
+placeholder="Enter Username"
+required>
+
+<label>Password</label>
+
+<input
+type="password"
+id="password"
+placeholder="Enter Password"
+required>
+
+<button type="submit">
+
+Login
+
+</button>
+
+<p id="error"></p>
+
+</form>
+
+</div>
+
+<script>
+
+const form=document.getElementById("loginForm");
+
+form.addEventListener("submit",function(e){
+
+e.preventDefault();
+
+const username=document.getElementById("username").value;
+
+const password=document.getElementById("password").value;
+
+const creator=JSON.parse(localStorage.getItem("creatorData"));
+
+if(!creator){
+
+document.getElementById("error").innerHTML="No account found.";
+
+return;
+
+}
+
+if(username===creator.username && password===creator.password){
+
+localStorage.setItem("loggedIn","true");
+
+window.location.href="creator-dashboard.html";
+
+}
+
+else{
+
+document.getElementById("error").innerHTML="Incorrect Username or Password";
+
+}
+
+});
+
+</script>
+
+</body>
+</html>

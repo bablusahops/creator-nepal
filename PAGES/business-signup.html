@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Business Registration | Creator Nepal</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+
+    <nav>
+        
+    <h2>Creator Nepal</h2>
+
+    <ul>
+
+        <li>
+            <a href="../index.html">Home</a>
+        </li>
+
+        <li>
+            <a href="creator-signup.html">Creators</a>
+        </li>
+
+        <li>
+            <a href="business-signup.html" class="active">Businesses</a>
+        </li>
+
+        <li class="dropdown">
+
+            <a href="#">About ▼</a>
+
+            <ul class="dropdown-menu">
+
+                <li>
+                    <a href="about.html">About Creator Nepal</a>
+                </li>
+
+                <li>
+                    <a href="why-choose.html">Why Choose Creator Nepal</a>
+                </li>
+
+            </ul>
+
+        </li>
+
+        <li class="dropdown">
+
+            <a href="#">More ▼</a>
+
+            <ul class="dropdown-menu">
+
+                <li><a href="contact.html">Contact</a></li>
+
+                <li><a href="privacy-policy.html">Privacy Policy</a></li>
+
+                <li><a href="terms.html">Terms & Conditions</a></li>
+
+                <li><a href="faq.html">FAQ</a></li>
+
+            </ul>
+
+        </li>
+
+    </ul>
+
+</nav>
+    <!-- Business Signup -->
+
+    <section class="signup">
+
+        <div class="signup-box">
+
+            <h1>Business Registration</h1>
+
+            <p>Create your business account and connect with creators.</p>
+
+            <form>
+
+                <!-- Business Logo -->
+
+                <div class="profile-upload">
+
+                    <label for="businessLogo" class="profile-circle">
+
+                        <img id="previewImage" alt="Business Logo">
+
+                        <span id="plusIcon">+</span>
+
+                    </label>
+
+                    <input
+                        type="file"
+                        id="businessLogo"
+                        accept="image/*"
+                        hidden>
+
+                    <label for="businessLogo" class="upload-btn">
+
+                        Choose Business Logo
+
+                    </label>
+
+                </div>
+
+                <!-- Business Name -->
+
+                <label>Business Name</label>
+
+                <input
+                    type="text"
+                    placeholder="Enter your business name"
+                    required>
+
+                <!-- Owner Name -->
+
+                <label>Owner Name</label>
+
+                <input
+                    type="text"
+                    placeholder="Enter owner name"
+                    required>
+
+                <!-- Email -->
+
+                <label>Email Address</label>
+
+                <input
+                    type="email"
+                    placeholder="Enter your email"
+                    required>
+
+                <!-- Phone -->
+
+                <label>Phone Number</label>
+
+                <input
+                    type="tel"
+                    placeholder="98XXXXXXXX"
+                    required>
+
+                <!-- Category -->
+
+                <label>Business Category</label>
+
+                <select required>
+
+                    <option value="">Select Category</option>
+
+                    <option>Restaurant</option>
+
+                    <option>Clothing Brand</option>
+
+                    <option>Electronics</option>
+
+                    <option>Hotel</option>
+
+                    <option>Travel</option>
+
+                    <option>Education</option>
+
+                    <option>Health</option>
+
+                    <option>Real Estate</option>
+
+                    <option>Automobile</option>
+
+                    <option>Technology</option>
+
+                    <option>Other</option>
+
+                </select>
+
+                <!-- Country -->
+
+                <label>Country</label>
+
+                <select required>
+
+                    <option value="">Select Country</option>
+
+                    <option>Nepal</option>
+
+                    <option>India</option>
+
+                    <option>Bhutan</option>
+
+                    <option>Bangladesh</option>
+
+                    <option>Other</option>
+
+                </select>
+
+                <!-- Username -->
+
+                <label>Create Username</label>
+
+                <input
+                    type="text"
+                    placeholder="@businessname"
+                    required>
+
+                <small>Your username will be unique.</small>
+
+                <!-- Password -->
+
+                <label>Create Password</label>
+
+                <input
+                    type="password"
+                    placeholder="Create a strong password"
+                    required>
+
+                <!-- Description -->
+
+                <label>Short Business Description</label>
+
+                <textarea
+                    rows="4"
+                    placeholder="Tell creators about your business..."></textarea>
+
+                <!-- Terms -->
+
+                <div class="terms">
+
+                    <input
+                        type="checkbox"
+                        required>
+
+                    <span>I agree to the Terms & Conditions</span>
+
+                </div>
+
+                <!-- Button -->
+
+                <button
+                    type="submit"
+                    class="btn1">
+
+                    Create Business Account
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <script src="../js/script.js"></script>
+    <script src="../JS/sidebar.js"></script>
+
+</body>
+
+</html>
